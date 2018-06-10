@@ -1,0 +1,25 @@
+<!---<mat-tab-group>
+  <mat-tab label="My Tasks" position="0">
+    <h1>Some tab content</h1>
+    <p>...</p>
+  </mat-tab>
+  <mat-tab label="In Progress">
+    <h1>Some more tab content</h1>
+    <p>...</p>
+  </mat-tab>
+  <mat-tab label="Completed">
+    <h1>Some more tab content</h1>
+    <p>...</p>
+  </mat-tab>
+</mat-tab-group>-->
+<nav mat-tab-nav-bar>
+  <a mat-tab-link
+     *ngFor="let link of tabLinks"
+     [routerLink]="link.path"
+     routerLinkActive #rla="routerLinkActive"
+     [active]="rla.isActive">
+    {{link.label}}
+  </a>
+</nav>
+
+<router-outlet></router-outlet>

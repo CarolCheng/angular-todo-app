@@ -1,0 +1,6 @@
+.mat-toolbar.taskcount {
+    color: #c8c8c8;
+    font-style: italic;
+    padding-left: 15px;
+    height: unset;
+}

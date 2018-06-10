@@ -1,0 +1,11 @@
+<div style="margin: 10px;">
+  <app-addtask>
+  </app-addtask>
+</div>
+<div style="margin: 10px;">
+  <app-task *ngFor="let task of alltasks" [task]="task">
+  </app-task>
+</div>
+<mat-toolbar class="taskcount">
+{{ todocount }} task(s) left
+</mat-toolbar>
