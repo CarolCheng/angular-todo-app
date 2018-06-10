@@ -3,7 +3,7 @@
     <mat-panel-title>
       <table>
         <tr>
-          <td [ngClass]="task.status === 'inprogress' ? 'task-table-title': 'task-table-title-completed'" style="width: 200px">
+          <td [ngClass]="task.status === 'Completed' ? 'task-table-title-completed':'task-table-title'" style="width: 200px">
             <mat-checkbox color="primary" [checked]="task.status === 'Completed'">{{task.title}}</mat-checkbox>
           </td>
         </tr>

@@ -18,8 +18,6 @@ import 'hammerjs';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AlltasksComponent } from './alltasks/alltasks.component';
-import { InprogressComponent } from './inprogress/inprogress.component';
-import { CompletedComponent } from './completed/completed.component';
 import { TaskComponent } from './task/task.component';
 // Service
 import { TasksService } from './services/tasks.service';
@@ -31,8 +29,6 @@ import { AddTaskComponent } from './addtask/addtask.component';
     AppComponent,
     NavbarComponent,
     AlltasksComponent,
-    InprogressComponent,
-    CompletedComponent,
     TaskComponent,
     AddTaskComponent
   ],
@@ -53,9 +49,7 @@ import { AddTaskComponent } from './addtask/addtask.component';
       //  { path: 'webView',
       //    component: AppComponent,
       // children: [
-      { path: 'tasks', component: AlltasksComponent },
-      { path: 'inprogress', component: InprogressComponent },
-      { path: 'completed', component: CompletedComponent }
+      { path: 'tasks', component: AlltasksComponent }
       // ]
       // }
     ])

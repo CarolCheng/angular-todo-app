@@ -14,15 +14,15 @@ export class NavbarComponent implements OnInit {
     this.tabLinks = [
       {
           label: 'My Tasks',
-          path: '/tasks',
+          value: 'MyTasks',
           index: 0
       }, {
           label: 'In Progress',
-          path: '/inprogress',
+          value: 'InProgress',
           index: 1
       }, {
           label: 'Completed',
-          path: '/completed',
+          value: 'Completed',
           index: 2
       }
     ];
